@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Array - Módulo 3 Unidad 3</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const numeros = [0, 0, 0, 0, 0];
+
+        numeros[0] = parseInt(prompt('Ingrese 1er. Número:', ''));
+        numeros[1] = parseInt(prompt('Ingrese 2do. Número:', ''));
+        numeros[2] = parseInt(prompt('Ingrese 3er. Número:', ''));
+        numeros[3] = parseInt(prompt('Ingrese 4to. Número:', ''));
+        numeros[4] = parseInt(prompt('Ingrese 5to. Número:', ''));
+
+        if (Number.isNaN(numeros[0]) || Number.isNaN(numeros[1]) || Number.isNaN(numeros[2]) || Number.isNaN(numeros[3]) || Number.isNaN(numeros[4])) {
+            document.write('Deben ser todos valores numéricos');
+        }
+        else {
+            const maxnumero = Math.max(numeros[0], numeros[1], numeros[2], numeros[3], numeros[4]);
+            document.write('El valor máximo es : ' + maxnumero);
+        }
+
+    </script>
+
+</body>
+
+</html>

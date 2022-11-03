@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio de Transporte - Módulo 3 Unidad 3</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		const distancia = parseInt(prompt('Ingrese la Distancia:', ''));
+
+		if (Number.isNaN(distancia)) {
+			document.write('Valor ingresado no númerico');
+		}
+		else {
+			if (distancia <= 1000) {
+				document.write('Recorrer a pie');
+			} else if (distancia <= 10000) {
+				document.write('Recorrer en bicicleta');
+			} else if (distancia <= 30000) {
+				document.write('Recorrer en colectivo');
+			} else if (distancia <= 100000) {
+				document.write('Recorrer en auto');
+			} else {
+				document.write('Recorrer en avión');
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
