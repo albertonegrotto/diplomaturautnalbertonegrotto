@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres de un TextArea</title>
+    <link rel="stylesheet" href="contador.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Contador de Caracteres</h1>
+    </div>
+    <div class="box">
+        <textarea rows="3" maxlength="250" id="mensaje"></textarea>
+        <div id="contador">0/250</div>
+    </div>
+
+    <script>
+        const mensaje = document.getElementById('mensaje');
+        const contador = document.getElementById('contador');
+
+        mensaje.addEventListener('input', function (e) {
+            const area = e.target;
+            const longMaxima = area.getAttribute('maxlength');
+            const longActual = area.value.length;
+            contador.innerHTML = `${longActual}/${longMaxima}`;
+        });
+    </script>
+</body>
+
+</html>

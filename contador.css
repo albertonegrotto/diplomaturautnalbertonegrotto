@@ -1,0 +1,28 @@
+body {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+h1{
+    margin-left:40%;
+    margin-top:20%;
+    width:100%;
+}
+
+.box {
+    width: 40%;
+}
+
+#contador {
+    margin-left:40%;
+}
+
+textarea {
+    margin-left:40%;
+    margin-top: 0%;
+    width: 100%;
+    height: 100px;
+}
+

@@ -1,0 +1,28 @@
+.contenedor{
+    display: flex;
+    margin-top:0px;
+    margin-left:300px;
+    height:420px;
+    width: 410px;
+    border-style: solid; 
+    border-width: 1px; 
+}
+
+.item {  
+    margin-top: 140px;
+    font-size: 15px;
+    height:130px; 
+    width:150px;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .boton{
+    height:90%;
+    width: 90%;
+    color:white;
+    border-style: none;
+  }
+

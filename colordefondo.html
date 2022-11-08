@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colordefondo.css">
+    <title>Cambiar color de fondo</title>
+    <style>
+        #btnrojo {
+            background-color: red;
+        }
+
+        #btnazul {
+            background-color: blue;
+        }
+
+        #btnverde {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cambiar Color de Fondo</h1>
+    <div class="contenedor" id="contenedorbotones">
+        <div class="item"><button id="btnrojo" class="boton">Fondo Rojo</button></div>
+        <div class="item"><button id="btnazul" class="boton">Fondo Azul</button></div>
+        <div class="item"><button id="btnverde" class="boton">Fondo Verde</button></div>
+    </div>
+
+    <script>
+        const fondo = document.getElementById('contenedorbotones');
+
+        btnrojo.addEventListener('click', function () {
+            fondo.style.backgroundColor = "red";
+        }, false);
+
+        btnazul.addEventListener('click', function () {
+            fondo.style.backgroundColor = "blue";
+        }, false);
+
+        btnverde.addEventListener('click', function () {
+            fondo.style.backgroundColor = "green";
+        }, false);
+
+    </script>
+
+</body>
+
+</html>
